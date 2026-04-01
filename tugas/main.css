@@ -1,0 +1,144 @@
+#navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-sizing: border-box;
+    transition: 0.3s;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+
+    background: rgba(169, 169, 169, 0.7);
+    backdrop-filter: blur(5px);
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+#navbar:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.logo {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none; 
+    font-size: 16px;
+}
+
+.nav-menu a:hover {
+    opacity: 0.7;
+}
+
+.content {
+    padding: 16px;
+}
+
+div.scroll-container {
+    background-color: #79AE6F;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    padding: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.08);
+    filter: brightness(1.1);
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    flex: 1;
+    text-align: center;
+    overflow: hidden;
+    color: #346739;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.img-box {
+    width: 100%;
+    height: 200px; 
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    transition: transform 0.4s ease, filter 0.4s ease;
+    display: block;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card:hover img {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+}
+
+.card h4 {
+    margin: 10px 0 5px;
+}
+
+.card p {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+}
